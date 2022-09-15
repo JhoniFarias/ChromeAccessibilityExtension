@@ -1,5 +1,5 @@
 
-const ENDPOINT_API_VISION = "https://congnitiveserviceapi.azurewebsites.net/api/Vision";
+const ENDPOINT_API_VISION = "API URL COGNITIVE SERVICE";
 
 let startExtension = () => {
   createButtonVlib();
