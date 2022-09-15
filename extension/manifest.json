@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Hello World",
+    "description": "Extensao de Testes",
+    "author": "Jhoni Farias dos Santos",
+    "browser_action": {
+   	 "default_title": "Hello World",
+   	 "default": "index.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://127.0.0.1:5555/"],
+          "js": ["script.js", "colorBlind.js", "textToSpeach.js"],
+          "css":["style_extension.css"]
+        }
+      ],
+      "web_accessible_resources": ["js/widget.js", "script.js", "style_extension.css"]
+}

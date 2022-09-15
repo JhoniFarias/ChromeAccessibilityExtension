@@ -1,0 +1,30 @@
+#btnColorBlind {
+    border-radius: 5px;
+    border: none; 
+    right: 0;
+    top: 35%;
+    position: fixed;
+
+
+ }
+
+ #btnColorBlind img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+ }
+
+
+ #btnSpeak {
+   border-radius: 5px;
+   border: none;
+   right: 0;
+   top: 40%;
+   position: fixed;
+ }
+
+ #btnSpeak img {
+   width: 30px;
+   height: 30px;
+   border-radius: 5px;
+}
