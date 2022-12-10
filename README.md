@@ -4,4 +4,4 @@
 
 2 - "startar" o site-example com live-server do VsCode
 
-3 - Provisóriamente alterar a URL do site no arquivo manifest.js 
+3 - Precisar alterar a URL do site no arquivo manifest.js 
