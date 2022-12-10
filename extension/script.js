@@ -1,5 +1,5 @@
 
-const ENDPOINT_API_VISION = "API URL COGNITIVE SERVICE";
+const ENDPOINT_API_VISION = "https://cognitiveserviceapi.azurewebsites.net/api/vision";
 
 let startExtension = () => {
   createButtonVlib();
@@ -42,27 +42,26 @@ let getDescriptionImages = () => {
 
   let allImages = getAllUrlImagesFromWebSite();
 
-  for (var image of allImages) 
-  {
+  for (var image of allImages) {
 
     fetch(`${ENDPOINT_API_VISION}?urlImage=${image.src}`,
-    { 
-      method: "GET",
-      mode: "cors",
-      headers: {
-        'Content-Type': 'application/json', 
-        'Accept': 'application/json',
-        
-      }
-    })
-    .then((response) =>  response.json())
-    .then((data) => { 
-      document.getElementById("imageExample").alt = data.captions[0].text
-      console.log(image.alt);
-    })
-    .catch((err) => { 
-      console.log(err)
-    })
+      {
+        method: "GET",
+        mode: "cors",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+
+        }
+      })
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("imageExample").alt = data.captions[0].text
+        console.log(image.alt);
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
 
